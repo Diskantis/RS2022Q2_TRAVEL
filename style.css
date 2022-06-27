@@ -1,0 +1,43 @@
+body {
+    font-family: 'Aleo', serif;
+    /* font-family: 'Red Hat Text', sans-serif; */
+}
+
+/* PAGE-HEADER */
+
+a {
+    text-decoration-line: none;
+}
+
+/* PAGE-START */
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    /* color: #000; */
+    line-height: 1.2;
+    max-width: 892px;
+}
+
+/* PAGE-STEPS */
+/* PAGE-DESTINATIONS */
+/* PAGE-STORIES */
+/* PAGE-FOOTER */
+
+/* PAGES */
+
+
+.page-header {
+    background-color: rgba(242,120,92,70);
+    position: absolute;
+
+}
+.page-start {
+    background-image: url(../img/2_page-start/garrett-parker-DlkF4-dbCOU-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 55px 0 330px 0;
+    position: relative;
+}
+
