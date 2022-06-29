@@ -82,7 +82,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* padding: 55px 0 330px 0; */
+    padding: 0 0 536px 0;
 }
 .page-stories-bg {
     background-image: url(../img/5_page-stories/bg.png);
