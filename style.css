@@ -5,29 +5,49 @@ body {
 .redhat {
     font-family: 'Red Hat Text', sans-serif;
 }
-h2 {
+.h2 {
+    display: block;
+    text-align: center;
     color: #F2785C;
+    font-family: 'Red Hat Text', sans-serif;
     font-size: 40px;
     font-weight: 500;
+    line-height: 52.92px;
 }
-.button {
+.button, .button-start, .button-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
     font-weight: 500;
     text-decoration-line: none;
     background-color: #0D606F;
-    width: 103px;
-    text-align: center;
-    padding:  10px 0;
+    padding:  10px 30px;
     border-radius: 10px;
     border: 1px solid #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     transition: 0.3s;
 }
-.button:hover {
+.button-start {
+    font-size: 24px;
+    padding:  13.5px 32.5px;
+    line-height: 31.75px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+.button-arrow {
+    display: block;
+    background-image: url(../img/bi_arrow-right.svg);
+    background-repeat: no-repeat;
+}
+.button:hover, .button-start:hover, .button-arrow:hover {
     color: #0D606F;
     border: 1px solid #0D606F;
     background-color: #fff;
+}
+.button-start:hover {
+    background-color: transparent;
 }
 
 /* PAGE-HEADER */
@@ -46,7 +66,7 @@ h2 {
     align-items: center;
     margin-bottom: 305px;
 }
-.logo {
+.logo-header {
     display: block;
     background-image: url(../img/1_page-header/logo.png);
     width: 216px;
@@ -55,12 +75,12 @@ h2 {
 }
 .nav {
     list-style-type: none;
-    margin: 35px 0 34px;
-    padding: 0;
     display: flex;
     justify-content: space-between;
+    margin: 35px 0 34px;
+    padding: 0px;
 }
-.nav>li {
+.nav li {
     padding: 0 41px 0 2px;
 }
 .nav-item {
@@ -69,8 +89,94 @@ h2 {
     color: #fff;
     text-decoration-line: none;
 }
+
 /* PAGE-START */
+
+.page-start h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    margin: 0;
+    padding: 31px 0 14px;
+}
+.page-start p {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.box-start-user {
+    position: relative;
+}
+.box-start-user input {
+    color: #F2785C;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    border: 0px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 33px 291px 35px 41px;
+    margin-top: 45px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.box-start-user .button-start {
+    position: absolute;
+    top: 18px;
+    right: 19px;
+    bottom: 18px;
+}
+.box-start-user input:focus, .box-start-user .button-start {
+    outline: none;
+}
+.box-start-user input::-webkit-input-placeholder {color: #F2785C;}
+.box-start-user input::-moz-placeholder          {color: #F2785C;}
+.box-start-user input:-moz-placeholder           {color: #F2785C;}
+.box-start-user input:-ms-input-placeholder      {color: #F2785C;}
+
 /* PAGE-STEPS */
+
+.box-steps {
+    display: flex;
+    justify-content: space-between;
+}
+.box-steps p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0D606F;
+    text-align: center;
+}
+.box-steps-item {
+    padding: 6px 0 45px 0;
+}
+.box-steps-item:nth-child(2) {
+    padding: 6px 0 0 68px;
+}
+.box-icon {
+    background-color: #F2785C;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 31px;
+}
+.steps-icon-1 {
+    background-image: url(../img/3_page-steps/velo.svg);
+    background-size: 50px 45px;
+}
+.steps-icon-2 {
+    background-image: url(../img/3_page-steps/calendar.svg);
+    background-size: 52px 52px;
+}
+.steps-icon-3 {
+    background-image: url(../img/3_page-steps/avia.svg);
+    background-size: 60px 45px;
+}
+
 /* PAGE-DESTINATIONS */
 /* PAGE-STORIES */
 /* PAGE-FOOTER */
@@ -82,12 +188,24 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 0 0 536px 0;
+    padding-bottom: 252px;
+    margin-bottom: 81px;
+
+}
+.page-start {
+    margin: 0 120px;
+    padding: 0px;
+    width: 892px;
+    height: 422px;
+    color: #fff;
+}
+.page-steps {
+    margin: 0 132px 0 131px;
+    padding: 0px;
 }
 .page-stories-bg {
     background-image: url(../img/5_page-stories/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* padding: 55px 0 330px 0; */
 }
