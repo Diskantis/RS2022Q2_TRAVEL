@@ -14,7 +14,7 @@ body {
     font-weight: 500;
     line-height: 52.92px;
 }
-.button, .button-start, .button-arrow {
+.button, .button-preview, .button-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     transition: 0.3s;
 }
-.button-start {
+.button-preview {
     font-size: 24px;
     padding:  13.5px 32.5px;
     line-height: 31.75px;
@@ -43,12 +43,12 @@ body {
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-.button:hover, .button-start:hover, .button-arrow:hover {
+.button:hover, .button-preview:hover, .button-arrow:hover {
     color: #0D606F;
     border: 1px solid #0D606F;
     background-color: #fff;
 }
-.button-start:hover {
+.button-preview:hover {
     background-color: transparent;
 }
 
@@ -92,25 +92,25 @@ body {
     text-decoration-line: none;
 }
 
-/* PAGE-START */
+/* PAGE-preview */
 
-.page-start h1 {
+.page-preview h1 {
     font-size: 80px;
     font-weight: 700;
     line-height: 96px;
     margin: 0;
     padding: 31px 0 14px;
 }
-.page-start p {
+.page-preview p {
     font-size: 20px;
     font-weight: 700;
     font-style: italic;
     margin-bottom: 0;
 }
-.box-start-user {
+.box-preview-user {
     position: relative;
 }
-.box-start-user input {
+.box-preview-user input {
     color: #F2785C;
     font-size: 24px;
     font-weight: 400;
@@ -124,19 +124,19 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
-.box-start-user .button-start {
+.box-preview-user .button-preview {
     position: absolute;
     top: 18px;
     right: 19px;
     bottom: 18px;
 }
-.box-start-user input:focus, .box-start-user .button-start {
+.box-preview-user input:focus, .box-preview-user .button-preview {
     outline: none;
 }
-.box-start-user input::-webkit-input-placeholder {color: #F2785C;}
-.box-start-user input::-moz-placeholder          {color: #F2785C;}
-.box-start-user input:-moz-placeholder           {color: #F2785C;}
-.box-start-user input:-ms-input-placeholder      {color: #F2785C;}
+.box-preview-user input::-webkit-input-placeholder {color: #F2785C;}
+.box-preview-user input::-moz-placeholder          {color: #F2785C;}
+.box-preview-user input:-moz-placeholder           {color: #F2785C;}
+.box-preview-user input:-ms-input-placeholder      {color: #F2785C;}
 
 /* PAGE-STEPS */
 
@@ -271,14 +271,14 @@ body {
 /* PAGES */
 
 .page-header {
-    background-image: url(../img/2_page-start/garrett-parker-DlkF4-dbCOU-unsplash.png);
+    background-image: url(../img/2_page-preview/garrett-parker-DlkF4-dbCOU-unsplash.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding-bottom: 252px;
     margin-bottom: 81px;
 }
-.page-start {
+.page-preview {
     margin: 0 120px;
     padding: 0px;
     width: 892px;
