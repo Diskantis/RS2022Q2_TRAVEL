@@ -37,11 +37,12 @@ body {
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 .button-arrow {
-    display: block;
-    align-items: center;
-    background-image: url(../img/bi_arrow-right.svg);
-    background-repeat: no-repeat;
-    margin: 0 auto;
+    font-size: 24px;
+    padding:  13px 59px;
+    line-height: 31.75px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    /* background-image: url(../img/4_page-destinations/arrow-right.svg);
+    background-repeat: no-repeat; */
 }
 .button:hover, .button-preview:hover, .button-arrow:hover {
     color: #0D606F;
@@ -66,11 +67,10 @@ body {
     margin: 0 120px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 305px;
 }
 .logo-header {
     display: block;
-    background-image: url(../img/1_page-header/logo.png);
+    background-image: url(../img/1_page-header/header-logo.png);
     width: 216px;
     height: 31px;
     margin: 25px 0 34px;
@@ -99,7 +99,7 @@ body {
     font-weight: 700;
     line-height: 96px;
     margin: 0;
-    padding: 31px 0 14px;
+    padding: 33px 0 14px;
 }
 .page-preview p {
     font-size: 20px;
@@ -169,37 +169,44 @@ body {
     margin: 0 auto 31px;
 }
 .steps-icon-1 {
-    background-image: url(../img/3_page-steps/velo.svg);
+    background-image: url(../img/3_page-steps/icon-velo.svg);
     background-size: 50px 45px;
 }
 .steps-icon-2 {
-    background-image: url(../img/3_page-steps/calendar.svg);
+    background-image: url(../img/3_page-steps/icon-calendar.svg);
     background-size: 52px 52px;
 }
 .steps-icon-3 {
-    background-image: url(../img/3_page-steps/avia.svg);
+    background-image: url(../img/3_page-steps/icon-avia.svg);
     background-size: 60px 45px;
 }
 
 /* PAGE-DESTINATIONS */
 
+.page-destinations {
+    margin: 0;
+    padding: 0;
+}
+.destinations-transition {
+    padding: 0 0 894px 0;
+}
+.page-destinations .button-arrow {
+    margin: 0 auto;
+}
 
 /* PAGE-STORIES */
 
 .page-stories h2 {
-    margin-top: 20px;
+    margin: 81px 0 40px 0;
     padding: 0;
 }
-.page-stories .button-arrow {
-    margin: 55px auto;
-    padding: 10px, 32px, 10px, 32px;
-}
+
 .bg-stories-img {
-    background-image: url(../img/5_page-stories/bg.png);
+    background-image: url(../img/5_page-stories/stories-bg.jpg);
     background-repeat: no-repeat;
     background-size: 1442px 1331px;
-    margin: 40px auto;
-    padding: 0 0 171px 0;
+    margin: 0;
+    padding: 0 0 60px 0;
 }
 .bg-stories-col {
     background-color: rgba(255, 255, 255, 0.7);
@@ -214,8 +221,8 @@ body {
 }
 .box-stories-item {
     position: relative;
+    margin: 6.1px 0 6.7px 0;
     padding: 0;
-    margin: 6.3px auto;
 }
 .box-stories-item h3 {
     font-size: 35px;
@@ -234,6 +241,9 @@ body {
 .box-stories-item a {
     font-weight: 700;
 }
+.box-text {
+    margin-left: 440px;
+}
 .box-imag {
     display: block;
     border-radius: 16px;
@@ -243,39 +253,47 @@ body {
     margin: 32px auto;
 }
 .stories-img-1 {
-    background-image: url(../img/5_page-stories/Rectangle_29.png);
+    background-image: url(../img/5_page-stories/stories-1.jpg);
     background-repeat: no-repeat;
     position: absolute;
 }
 .stories-img-2 {
-    background-image: url(../img/5_page-stories/Rectangle_30.png);
+    background-image: url(../img/5_page-stories/stories-2.jpg);
     background-repeat: no-repeat;
     position: absolute;
 }
 .stories-img-3 {
-    background-image: url(../img/5_page-stories/Rectangle_31.png);
+    background-image: url(../img/5_page-stories/stories-3.jpg);
     background-repeat: no-repeat;
     position: absolute;
 }
 .stories-img-4 {
-    background-image: url(../img/5_page-stories/Rectangle_32.png);
+    background-image: url(../img/5_page-stories/stories-4.jpg);
     background-repeat: no-repeat;
     position: absolute;
 }
-.box-text {
-    margin-left: 440px;
+.page-stories .button-arrow {
+    margin: 48px auto;
 }
 
 /* PAGE-FOOTER */
 
+.page-footer p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 21.17px;
+    text-align: center;
+}
+
 /* PAGES */
 
 .page-header {
-    background-image: url(../img/2_page-preview/garrett-parker-DlkF4-dbCOU-unsplash.png);
+    background-image: url(../img/2_page-preview/preview-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-bottom: 252px;
+    padding-bottom: 254px;
     margin-bottom: 81px;
 }
 .page-preview {
@@ -293,6 +311,5 @@ body {
     margin: 0 auto;
 }
 .page-footer {
-    margin: 0;
-    padding: 0;
+    margin-top: 20px;
 }
