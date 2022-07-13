@@ -19,35 +19,45 @@
     <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" data-mce-href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" data-mce-href="img/favicon/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
-    <header>
-        <div class="page-header">
-            <div class="bg-header">
-                <nav class="box-header">
-                    <a href="" class="logo-header"></a>
-                    <ul class="nav redhat">
-                        <li><a href="" class="nav-item">How It Works</a></li>
-                        <li><a href="" class="nav-item">Plan Your Trip</a></li>
-                        <li><a href="" class="nav-item">Destinations</a></li>
-                        <li><a href="" class="nav-item">Travel Stories</a></li>
+    <div class="bg">
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <a href="#" class="logo">
+                    <object type="image/svg+xml" data="./img/Logo.svg" class="logo-object">
+                        Your browser does not support SVG
+                    </object>
+                </a>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link">How It Works</li>
+                        <li class="navigation__link">Plan Your Trip</li>
+                        <li class="navigation__link">Destinations</li>
+                        <li class="navigation__link">Travel Stories</li>
                     </ul>
-                    <a href="" class="button">Login</a>
                 </nav>
-            </div>
-            <section class="page-preview">
-                <h1>Explore the beauty of the World</h1>
-                <p>Receive personalized recommendations for countries, hotels, activities and more</p>
-                <div class="box-preview-user">
-                    <input type="text" placeholder="What would you like to do?">
-                    <button type="button" class="button-preview">Start Planning</button>
+                <div class="header__button">
+                    <button class="button button_colored">Login</button>
                 </div>
-            </section>
-        </div>
-    </header>
+            </div>
+        </header>
+        <section class="page-preview">
+            <div class="wrapper preview__wrapper">
+                <div class="preview__content">
+                    <h1 class="preview__title">Explore the beauty of the World</h1>
+                    <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
+                    <div class="preview__form">
+                        <div class="preview__line">
+                            <input type="text" name="question" placeholder="What would you like to do?">
+                        </div>
+                        <button class="button button_colored">Start Planning</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <main>
         <section class="page-steps">
             <h2 class="h2">3 STEPS TO THE PERFECT TRIP</h2>
@@ -77,7 +87,7 @@
             <div class="destinations-transition">
 
             </div>
-            <button class="button-arrow">Find More</button>
+            <button class="button button_colored">Find More</button>
         </section>
         <section class="page-stories">
             <h2 class="h2">TRAVEL STORIES</h2>
@@ -123,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button-arrow">See More</button>
+                    <button class="button button_colored">See More</button>
                 </div>
                 <footer class="page-footer">
                     <p class="redhat">All Rights Reserved © Travel Portal</p>
@@ -131,5 +141,5 @@
             </div>
         </section>
     </main>
-    </html>
 </body>
+</html>

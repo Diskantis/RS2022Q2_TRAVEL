@@ -1,0 +1,46 @@
+.page-preview {
+  padding: 32px 0 221px;
+}
+
+.preview__wrapper {
+  display: flex;
+  //max-width: 892px;
+}
+
+.preview__title {
+  color: $color-light;
+  @extend %font-secondary;
+  max-width: 892px;
+  margin: 0 0 56px;
+}
+
+.preview__text {
+  color: $color-light;
+  margin: 0 0 46px;
+  @extend %font-secondary;
+  @include font ($size: 2.0rem, $height: 2.4rem,  $weight: 700, $style: italic);
+}
+
+.preview__line {
+  input {
+      display: block;
+      padding: 32px 291px 41px 32px;
+      position: relative;
+      background-color: $color-placeholder;
+      border-radius: 16px;
+      border: none;
+      outline: none;
+      position: relative;
+    //&:focus {
+    //  //border-color: $color-placeholder;
+    //  outline: none;
+  }
+}
+
+.preview__line {
+  button {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+  }
+}
