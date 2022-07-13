@@ -1,14 +1,16 @@
 .button {
   @extend %font-primary;
   @include font ($size: 1.6rem, $height: 2.1rem);
-  padding: 10px 30px;
+  padding: 9px 30px;
   border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
   cursor: pointer;
   @extend %transition;
-  &_colored {
-    background-color: $color-button;
-    border: 1px solid $color-button;
-    color: $color-light;
+  background-color: $color-button;
+  border: 1px solid $color-button;
+  color: $color-light;
+  &_arrow {
+    box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
     &:hover {
       background-color: $color-light;
       border-color: $color-button;

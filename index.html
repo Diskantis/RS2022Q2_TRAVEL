@@ -38,9 +38,7 @@
                         <li class="navigation__link">Travel Stories</li>
                     </ul>
                 </nav>
-                <div class="header__button">
-                    <button class="button button_colored">Login</button>
-                </div>
+                <button class="button">Login</button>
             </div>
         </header>
         <section class="page-preview">
@@ -49,10 +47,8 @@
                     <h1 class="preview__title">Explore the beauty of the World</h1>
                     <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
                     <div class="preview__form">
-                        <div class="preview__line">
-                            <input type="text" name="question" placeholder="What would you like to do?">
-                        </div>
-                        <button class="button button_colored">Start Planning</button>
+                        <input type="text" name="question" placeholder="What would you like to do?">
+                        <button class="button button_arrow">Start Planning</button>
                     </div>
                 </div>
             </div>
@@ -60,25 +56,33 @@
     </div>
     <main>
         <section class="page-steps">
-            <h2 class="h2">3 STEPS TO THE PERFECT TRIP</h2>
-            <div class="box-steps">
-                <div class="box-steps-item">
-                    <a href="">
-                        <div class="box-icon steps-icon-1"></div>
-                        Tell us what you want to do
-                    </a>
-                </div>
-                <div class="box-steps-item">
-                    <a href="">
-                        <div class="box-icon steps-icon-2"></div>
-                        Share us preferable dates
-                    </a>
-                </div>
-                <div class="box-steps-item">
-                    <a href="">
-                        <div class="box-icon steps-icon-3"></div>
-                        We will give you recommendations
-                    </a>
+            <div class="wrapper steps__wrapper">
+                <h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
+                <div class="layout-3-column">
+                    <div class="step">
+                        <div class="step__icon">
+                          <span class="icon-square">
+                            <span class="ico ico_bicycle"></span>
+                          </span>
+                        </div>
+                        <p class="step__text">Tell us what you want to do</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__icon">
+                          <span class="icon-square">
+                            <span class="ico ico_calendar"></span>
+                          </span>
+                        </div>
+                        <p class="step__text">Share us preferable dates</p>
+                    </div>
+                    <div class="step">
+                        <div class="step__icon">
+                          <span class="icon-square">
+                            <span class="ico ico_avia"></span>
+                          </span>
+                        </div>
+                        <p class="step__text">We will give you recommendations</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -87,7 +91,7 @@
             <div class="destinations-transition">
 
             </div>
-            <button class="button button_colored">Find More</button>
+            <button class="button button_arrow">Find More</button>
         </section>
         <section class="page-stories">
             <h2 class="h2">TRAVEL STORIES</h2>
@@ -133,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button button_colored">See More</button>
+                    <button class="button button_arrow">See More</button>
                 </div>
                 <footer class="page-footer">
                     <p class="redhat">All Rights Reserved © Travel Portal</p>

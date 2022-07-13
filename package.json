@@ -1,7 +1,6 @@
 {
   "name": "rsschool-travel",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "style": "sass --watch sass/style.scss sass/style.css",
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Diskantis/RSSCHOOL-TRAVEL/issues"
   },
-  "homepage": "https://github.com/Diskantis/RSSCHOOL-TRAVEL#readme"
+  "homepage": "https://github.com/Diskantis/RSSCHOOL-TRAVEL#readme",
+  "description": ""
 }

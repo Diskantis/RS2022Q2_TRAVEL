@@ -582,6 +582,10 @@ ul {
   list-style: none;
 }
 
+section, main, footer, header, article {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
 }
