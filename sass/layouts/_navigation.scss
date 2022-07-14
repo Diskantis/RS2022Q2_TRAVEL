@@ -1,13 +1,18 @@
+.header__navigation {
+  width: 527px;
+  margin-left: -35px;
+}
+
 .navigation {
-  margin: 0;
   display: flex;
+  justify-content: space-between;
+  margin: 0;
   @include font ($size: 1.6rem, $height: 2.1rem);
 }
 
 .navigation__link {
   color: $color-light;
   list-style: none;
-  padding: 0 42px 0 0;
   cursor: pointer;
   &:hover {
     color: $color-button;
