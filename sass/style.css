@@ -409,7 +409,7 @@ section, main, footer, header, article {
   font-family: Red Hat Text, Verdana, sans-serif;
 }
 
-.preview__form input, .preview__text, .preview__title, h3, h1 {
+.step__title, .preview__form input, .preview__text, .preview__title, h3, h1 {
   font-family: Aleo, Verdana, sans-serif;
 }
 
@@ -534,11 +534,10 @@ h3 {
 
 .layout-3-column {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .layout-3-column > * {
-  flex-basis: 30%;
+  flex-basis: 27%;
 }
 
 .bg {
@@ -618,7 +617,7 @@ h3 {
 }
 
 .page-steps {
-  padding: 80px 0 160px;
+  padding: 80px 0 0;
 }
 
 .steps__wrapper {
@@ -631,12 +630,39 @@ h3 {
   margin: 0 0 40px;
 }
 
+.step {
+  text-align: center;
+}
+
+.step:nth-child(1) {
+  margin: 0 35px 0 -35px;
+}
+
 .step__icon {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
 .step__title {
-  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #0D606F;
+  margin-bottom: 97px;
+}
+
+.destinations__title {
+  text-align: center;
+  color: #F2785C;
+  margin: 0 0 40px;
+}
+
+.stories__title {
+  text-align: center;
+  color: #F2785C;
+  margin: 0 0 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
