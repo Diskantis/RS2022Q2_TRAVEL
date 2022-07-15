@@ -11,10 +11,10 @@
   color: $color-light;
   &_arrow {
     box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+    }
     &:hover {
       background-color: $color-light;
       border-color: $color-button;
       color: $color-button;
-    }
   }
 }

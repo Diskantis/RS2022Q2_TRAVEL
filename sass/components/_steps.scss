@@ -1,5 +1,5 @@
 .page-steps {
-  padding: 80px 0 0;
+  padding: 47px 0 56px;
 }
 
 .steps__wrapper {
@@ -8,28 +8,37 @@
 .steps__title {
   text-align: center;
   color: $color-heading;
-  margin: 0 0 40px;
+  margin-bottom: 40px;
 }
 
-// Tool block
+// Step block
 .step {
   text-align: center;
 }
 
+.step__link {
+  text-decoration-line: none;
+}
+
 .step:nth-child(1) {
-  margin: 0 35px 0 -35px;
+  margin-right: 70px;
+}
+
+.step:nth-child(3) .step__link {
+  padding-right: 317px;
 }
 
 .step__icon {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .step__title {
   @extend %font-secondary;
   @include font ($size: 2.0rem, $height: 2.4rem, $weight: 400);
   color: $color-button;
-  margin-bottom: 97px;
+  cursor: pointer;
 }
 

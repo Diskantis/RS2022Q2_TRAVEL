@@ -1,6 +1,18 @@
 .logo {
-  display: flex;
-  align-items: flex-start;
+  display: block;
   background-image: url("./img/Logo.png");
-  padding: 0 0 9px;
+  padding: 0 0 4px;
+}
+
+.logo-path {
+  @extend %transition;
+}
+
+.logo-svg {
+  cursor: pointer;
+  &:hover {
+    .logo-path {
+      fill: $color-button;
+    }
+  }
 }

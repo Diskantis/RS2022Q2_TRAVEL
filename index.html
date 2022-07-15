@@ -18,7 +18,10 @@
     <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192" data-mce-href="img/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" data-mce-href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" data-mce-href="img/favicon/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+<!--    &lt;!&ndash; Swiper CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="sass/swiper-bundle.min.css">-->
+<!--    &lt;!&ndash; CSS &ndash;&gt;-->
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
@@ -60,38 +63,77 @@
                 <h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
                 <div class="layout-3-column">
                     <div class="step">
-                        <div class="step__icon">
-                          <span class="icon-square">
-                            <span class="ico ico_bicycle"></span>
-                          </span>
-                        </div>
-                        <p class="step__title">Tell us what you want to do</p>
+                        <a class="step__link" href="#">
+                            <div class="step__icon">
+                              <span class="icon-square">
+                                <span class="ico ico_bicycle"></span>
+                              </span>
+                            </div>
+                            <p class="step__title">Tell us what you want to do</p>
+                        </a>
                     </div>
                     <div class="step">
-                        <div class="step__icon">
-                          <span class="icon-square">
-                            <span class="ico ico_calendar"></span>
-                          </span>
-                        </div>
-                        <p class="step__title">Share us preferable dates</p>
+                        <a class="step__link" href="#">
+                            <div class="step__icon">
+                              <span class="icon-square">
+                                <span class="ico ico_calendar"></span>
+                              </span>
+                            </div>
+                            <p class="step__title">Share us preferable dates</p>
+                        </a>
                     </div>
                     <div class="step">
-                        <div class="step__icon">
-                          <span class="icon-square">
-                            <span class="ico ico_avia"></span>
-                          </span>
-                        </div>
-                        <p class="step__title">We will give you recommendations</p>
+                        <a class="step__link" href="#">
+                            <div class="step__icon">
+                              <span class="icon-square">
+                                <span class="ico ico_avia"></span>
+                              </span>
+                            </div>
+                            <p class="step__title">We will give you recommendations</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="page-destinations">
             <h2 class="destinations__title" >POPULAR DESTINATIONS</h2>
-            <div class="destinations-transition">
-
+            <div class="wrapper">
+                <input type="radio" name="point" id="slide1">
+                <input type="radio" name="point" id="slide2" checked>
+                <input type="radio" name="point" id="slide3">
+                <div class="slider">
+                    <div class="slides slide1"></div>
+                    <div class="slides slide2"></div>
+                    <div class="slides slide3"></div>
+                </div>
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
             </div>
-            <button class="button button_arrow">Find More</button>
+<!--            <div class="slider-container swiper">-->
+<!--                <div class="slide-content">-->
+<!--                    <div class="card-wrapper swiper-wrapper">-->
+<!--                        <div class="card-image swiper-slide">-->
+<!--                            <img src="./img/destinations/USA.jpg" alt="" class="card-img">-->
+<!--                        </div>-->
+<!--                        <div class="card-image swiper-slide">-->
+<!--                            <img src="./img/destinations/SPAIN.jpg" alt="" class="card-img">-->
+<!--                        </div>-->
+<!--                        <div class="card-image swiper-slide">-->
+<!--                            <img src="./img/destinations/JAPAN.jpg" alt="" class="card-img">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="swiper-button-next swiper-nav-btn"></div>-->
+<!--                <div class="swiper-button-prev swiper-nav-btn"></div>-->
+<!--                <div class="swiper-pagination"></div>-->
+<!--            </div>-->
+
+            <div class="destinations__button">
+                <button class="button button_arrow">Find More</button>
+            </div>
         </section>
         <section class="page-stories">
             <h2 class="stories__title">TRAVEL STORIES</h2>
@@ -146,4 +188,8 @@
         </section>
     </main>
 </body>
+<!--&lt;!&ndash;Swiper JS&ndash;&gt;-->
+<!--<script src="js/swiper-bundle.min.js"></script>-->
+<!--&lt;!&ndash;JavaScript&ndash;&gt;-->
+<!--<script src="js/script.js"></script>-->
 </html>
