@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  max-width: 1440px;
+  margin: auto;
   @extend %font-primary;
   @include font($size: 1.6rem, $height: 2.1rem);
 }

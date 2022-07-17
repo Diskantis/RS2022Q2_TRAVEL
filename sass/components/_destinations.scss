@@ -6,203 +6,201 @@
 .destinations__title {
   text-align: center;
   color: $color-heading;
-  //margin: 0 0 1028px;
+  margin: 0 0 46px;
 }
 
 .destinations__button {
   margin: 0;
 }
 
-.wrapper {
-  height: 350px;
-  margin: 100px auto 0;
-  position: relative;
-  width: 700px;
+.des-slider {
+  width: 1440px;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 40px;
+
 }
 
-.wrapper > input {
+.navigation-bar {
+  position: absolute;
+  display: flex;
+  margin-top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar {
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #000;
+  opacity: .7;
+  border-radius: 10px;
+  transition: all .4s ease;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.slides input {
   display: none;
 }
 
-.slider {
-  background-color: #ddd;
-  width: inherit;
-  height: inherit;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-  -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-}
-
 .slides {
-  height: inherit;
-  position: absolute;
-  width: inherit;
-}
-
-
-.slide1 {
-  background-image: url("./img/destinations/USA.jpg");
-  width: 800px;
-  height: 800px;
-}
-
-.slide2 {
-  background-image: url("./img/destinations/SPAIN.jpg");
-  width: 800px;
-  height: 800px;
-}
-
-.slide3 {
-  background-image: url("./img/destinations/JAPAN.jpg");
-  width: 800px;
-  height: 800px;
-}
-
-
-.wrapper .controls {
-  left: 50%;
-  margin-left: -98px;
-  position: absolute;
-}
-
-.wrapper label {
-  cursor: pointer;
-  display: inline-block;
-  height: 8px;
-  margin: 25px 12px 0 16px;
+  display: flex;
   position: relative;
-  width: 8px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  //-o-border-radius: 50%;
-  border-radius: 50%;
+  width: 2870px;
+  height: 100%;
 }
 
-.wrapper label:after {
-  border: 2px solid #ddd;
-  content: " ";
-  display: block;
-  height: 12px;
-  left: -4px;
-  position: absolute;
-  top: -4px;
-  width: 12px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  //-o-border-radius: 50%;
-  border-radius: 50%;
+.slide {
+  width: 800px;
+  height: 800px;
+  margin: 0 30px;
+  transition: all .6s ease;
 }
 
-.wrapper label {
-  cursor: pointer;
-  display: inline-block;
-  height: 8px;
-  margin: 25px 12px 0 16px;
-  position: relative;
-  width: 8px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  //-o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-transition: background ease-in-out .5s;
-  -moz-transition: background ease-in-out .5s;
-  -o-transition: background ease-in-out .5s;
-  transition: background ease-in-out .5s;
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 }
 
-.wrapper label:hover,
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3), {
-  background: #ddd;
+#sw_1:checked ~ .s1 {
+  margin-left: 320px;
 }
 
-.slides {
-  height: inherit;
-  opacity: 0;
-  position: absolute;
-  width: inherit;
-  z-index: 0;
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  //-o-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-  -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-  -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-  transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+#sw_2:checked ~ .s1 {
+  margin-left: -540px;
 }
 
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3, {
-  opacity: 1;
-  z-index: 1;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+#sw_3:checked ~ .s1 {
+  margin-left: -1400px;
 }
 
 
-//.slider-container {
-//  max-width: 2520px;
-//  width: 100%;
-//  //height: 800px;
-//  padding: 10px 0;
-//}
-//.slide-content {
-//  padding: 0 0 45px;
-//  overflow: hidden;
-//}
-//
-//.card-image {
-//  position: relative;
-//  width: 800px;
-//  height: 800px;
-//}
-//
-//.card-image .card-img {
-//  width: 100%;
-//  height: 100%;
-//  object-fit: cover;
-//  border-radius: 16px;
-//}
-//
-//.swiper-nav-btn {
-//  color: $color-heading;
-//  &:hover {
-//    color: $color-button;
-//    @extend %transition;
-//  }
-//  &::before {
-//    font-size: 60px;
-//  }
-//  &::after {
-//    font-size: 60px;
-//  }
-//}
-//
-//.swiper-button-next {
-//  right: 10px;
-//}
-//
-//.swiper-button-prev {
-//  left: 50px;
-//}
-//
-//.swiper-pagination-bullet {
-//  width: 20px;
-//  height: 20px;
-//  background-color: rgba(242, 120, 92, 0.5);
-//}
-//
-//.swiper-pagination-bullet-active {
-//  width: 20px;
-//  height: 20px;
-//  background-color: #F2785C;
-//  border: 1px solid #000000;
-//}
+// .slider { /*положение слайдера*/
+//   position: relative;
+//   text-align: center;
+//   margin: 0 auto;
+//   padding: 0;
+//   // top: 10px;
+// }
+
+// .slides article { /*все изображения справа друг от доруга*/
+//   width: 800px ;
+//   float: left;
+// }
+
+// .slides .image { /*устанавливает общий размер блока с изображениями*/
+//   width: 2520px;
+//   margin: 0 0 0 0;
+//   line-height: 800px;
+// }
+
+// .overflow { /*сркывает все, что находится за пределами этого блока*/
+//   width: 1440px;
+//   overflow: hidden;
+// }
+
+// article img { /*размер изображений слайдера*/
+//   width: 100%;
+// }
+
+// .desktop:checked ~ .slider { /*размер всего слайдера*/
+//   width: 800px; /*максимальнная длинна*/
+// }
+
+// /*настройка переключения и положения для левой стрелки*/
+// /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+// #switch1:checked ~ #controls label:nth-child(3), 
+// #switch2:checked ~ #controls label:nth-child(1),
+// #switch3:checked ~ #controls label:nth-child(2) {
+//   background: url("../img/icons/next.png") no-repeat; /*заливка фона картинкой без повторений*/
+//   float: right;
+//   margin: 0; /*сдвиг влево*/
+//   display: block;
+//   width: 68px;
+//   height: 68px;
+// }
+
+// /*настройка переключения и положения для правой стрелки*/
+// #switch1:checked ~ #controls label:nth-child(2), 
+// #switch2:checked ~ #controls label:nth-child(3),
+// #switch3:checked ~ #controls label:nth-child(1) {
+//   background: url("../img/icons/prev.png") no-repeat; /*заливка фона картинкой без повторений*/
+//   float: left;
+//   margin: 0; /*сдвиг вправо*/
+
+//   display: block;
+//   width: 68px;
+//   height: 68px;
+// }
+
+// label, a { /*при наведении на стрелки или переключатели - курсор изменится*/
+//   cursor: pointer;
+// }
+
+// .destinations-slider input { /*скрывает стандартные инпуты (чекбоксы) на странице*/
+//   display: none;
+// }
+
+// /*позиция изображения при активации переключателя*/
+// #switch1:checked ~ .slides .image {
+//   margin-left: 0;
+// }
+
+// #switch2:checked ~ .slides .image {
+//   margin-left: -100%;
+// }
+
+// #switch3:checked ~ .slides .image {
+//   margin-left: -200%;
+// }
+
+
+// #controls { /*положение блока всех управляющих элементов*/
+//   margin: 0;
+//   width: 100%;
+//   height: 68px;
+// }
+
+// #active { /*расположение блока с переключателями*/
+//   margin: 0 0 40px;
+//   text-align: center;
+// }
+
+// #active label { /*стиль отдельного переключателя*/
+//   border-radius: 10px; /*скругление углов*/
+//   display: inline-block; /*расположение в строку*/
+//   width: 20px;
+//   height: 20px;
+//   background: #bbb;
+// }
+
+// #active label:hover { /*поведение чекбокса при наведении*/
+// background: #76c8ff;
+// border-color: #777 !important; /*выполнение в любом случае*/
+// }
+
+// /*цвет активного лейбла при активации чекбокса*/
+// #switch1:checked ~ #active label:nth-child(1),
+// #switch2:checked ~ #active label:nth-child(2),
+// #switch3:checked ~ #active label:nth-child(3) {
+// background: #18a3dd;
+// border-color: #18a3dd !important;
+// }
+
+// .slides .image { /*анимация пролистывания изображений*/
+// transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+// }
+
+// #controls label:hover { /*прозрачность стрелок при наведении*/
+// opacity: 0.6;
+// }
+
+// #controls label{ /*прозрачность стрелок при отводе курсора*/
+// transition: opacity 0.2s ease-out;
+// }
