@@ -94,47 +94,26 @@
         </section>
         <section class="page-destinations">
             <h2 class="destinations__title" >POPULAR DESTINATIONS</h2>
-            <div class="des-slider">
+            <div class="destinations-slider">
+                <input type="radio" name="radio-btn" id="switch-1">
+                <input type="radio" name="radio-btn" id="switch-2" checked>
+                <input type="radio" name="radio-btn" id="switch-3">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="sw_1">
-                    <input type="radio" name="radio-btn" id="sw_2" checked>
-                    <input type="radio" name="radio-btn" id="sw_3">
-                    <div class="slide s1"><img src="img/destinations/SPAIN.jpg" alt="SPAIN.jpg"></div>
-                    <div class="slide"><img src="img/destinations/JAPAN.jpg" alt="JAPAN.jpg"></div>
-                    <div class="slide"><img src="img/destinations/USA.jpg" alt="USA.jpg"></div>
+                    <div class="dest__slide s1"><img src="img/destinations/SPAIN.jpg" alt="SPAIN.jpg"></div>
+                    <div class="dest__slide"><img src="img/destinations/JAPAN.jpg" alt="JAPAN.jpg"></div>
+                    <div class="dest__slide"><img src="img/destinations/USA.jpg" alt="USA.jpg"></div>
+                </div>
+                <div class="controls-btn">
+                    <label class="ctrl__btn" for="switch-1"></label>
+                    <label class="ctrl__btn" for="switch-2"></label>
+                    <label class="ctrl__btn" for="switch-3"></label>
                 </div>
                 <div class="navigation-bar">
-                    <label for="sw_1" class="bar"></label>
-                    <label for="sw_2" class="bar"></label>
-                    <label for="sw_3" class="bar"></label>
+                    <label class="navi__bar" for="switch-1"></label>
+                    <label class="navi__bar" for="switch-2"></label>
+                    <label class="navi__bar" for="switch-3"></label>
                 </div>
             </div>
-                <!-- <input checked type="radio" name="respond" class="desktop">
-                    <article class="slider">
-                        <input type="radio" name="slider" id="switch1">
-                        <input checked type="radio" name="slider" id="switch2">
-                        <input type="radio" name="slider" id="switch3">
-                        <div class="slides">
-                            <div class="overflow">
-                                <div class="image">
-                                    <article><img src="img/destinations/SPAIN.jpg" alt="SPAIN.jpg"></article>
-                                    <article><img src="img/destinations/JAPAN.jpg" alt="JAPAN.jpg"></article>
-                                    <article><img src="img/destinations/USA.jpg" alt="USA.jpg"></article>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="controls">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                        </div>
-                        <div id="active">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                        </div>
-                    </article>
-                </div> -->
             <div class="destinations__button">
                 <button class="button button_arrow">Find More</button>
             </div>
