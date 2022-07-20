@@ -10,11 +10,14 @@
   @include font ($size: 1.6rem, $height: 2.1rem);
 }
 
-.navigation__link {
+.navigation__link a {
   color: $color-light;
+  text-decoration-line: none;
   cursor: pointer;
   &:hover {
     color: $color-button;
     @extend %transition;
   }
 }
+
+

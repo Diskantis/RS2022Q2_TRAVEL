@@ -413,7 +413,7 @@ section, main, footer, header, article {
   font-family: Aleo, Verdana, sans-serif;
 }
 
-.navigation__link:hover, .button, .logo-path {
+.navigation__link a:hover, .button, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -424,6 +424,7 @@ section, main, footer, header, article {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -570,11 +571,12 @@ h3 {
   line-height: 2.1rem;
 }
 
-.navigation__link {
+.navigation__link a {
   color: #ffffff;
+  text-decoration-line: none;
   cursor: pointer;
 }
-.navigation__link:hover {
+.navigation__link a:hover {
   color: #0D606F;
 }
 
