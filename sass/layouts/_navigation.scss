@@ -20,4 +20,8 @@
   }
 }
 
-
+.header__navigation {
+  @include media-mobile {
+    display: none;
+  }
+}

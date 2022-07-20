@@ -24,28 +24,25 @@
   position: relative;
 }
 
-.preview__form {
-  input {
-    display: flex;
-    width: 100%;
-    @extend %font-secondary;
-    @include font ($size: 2.4rem, $height: 2.9rem,  $weight: 400, $style: italic);
+.preview__form input {
+  display: flex;
+  width: 100%;
+  @extend %font-secondary;
+  @include font ($size: 2.4rem, $height: 2.9rem,  $weight: 400, $style: italic);
+  color: $color-heading;
+  padding: 32px 291px 33px 41px;
+  background-color: $color-placeholder;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  &::-webkit-input-placeholder {
     color: $color-heading;
-    padding: 32px 291px 33px 41px;
-    background-color: $color-placeholder;
-    border-radius: 16px;
-    border: none;
-    outline: none;
-    &::-webkit-input-placeholder {
-      color: $color-heading;
-    }
   }
 }
 
 .preview__form button {
-    //@include font ($size: 2.4rem, $height: 3.2rem);
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    bottom: 18px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
 }

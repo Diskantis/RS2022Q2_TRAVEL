@@ -103,7 +103,7 @@ label {
   cursor: pointer;
   &:hover {
     background-color: $color-heading;
-    border: 1px solid #000000;
+    border: 1px solid $color-hamburger;
   }
 }
 
