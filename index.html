@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
-    <div class="background-preview">
+    <div class="background-header-preview">
         <header class="header">
             <div class="wrapper header__wrapper">
                 <a href="#" class="logo">
-                    <object type="image/svg+xml" data="./img/Logo.svg" class="logo-object">
+                    <object type="image/svg+xml" data="img/logo.svg" class="logo-object">
                         Your browser does not support SVG
                     </object>
                 </a>
@@ -48,7 +48,7 @@
                     <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
                     <div class="preview__form">
                         <input type="text" name="question" placeholder="What would you like to do?">
-                        <button class="button button_arrow">Start Planning</button>
+                        <button class="button button_planning">Start Planning</button>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                                 <img src="img/destinations/JAPAN.jpg" alt="JAPAN.jpg">
                             </div>
                             <div class="dest__slide">
-<!--                                <div class="info">USA</div>-->
+                                <div class="info">USA</div>
                                 <img src="img/destinations/USA.jpg" alt="USA.jpg">
                             </div>
                         </div>
@@ -128,60 +128,89 @@
                 </div>
             </div>
             <div class="destinations__button">
-                <button class="button button_arrow">Find More</button>
-            </div>
-        </section>
-        <section class="page-stories">
-            <h2 class="stories__title">TRAVEL STORIES</h2>
-            <div class="bg-stories-img">
-                <div class="bg-stories-col">
-                    <div class="box-stories">
-                        <div class=" box-stories-item">
-                            <div class="box-imag stories-img-1"></div>
-                            <div class="box-text">
-                                <h3>10 Photos of Attractive Thailand</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-stories">
-                        <div class="box-stories-item">
-                            <div class="box-imag stories-img-2"></div>
-                            <div class="box-text">
-                                <h3>Canyonlands National Park, Utah</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-stories">
-                        <div class="box-stories-item">
-                            <div class="box-imag stories-img-3"></div>
-                            <div class="box-text">
-                                <h3>I left my heart in the Mountains!</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-stories">
-                        <div class="box-stories-item">
-                            <div class="box-imag stories-img-4"></div>
-                            <div class="box-text">
-                                <h3>The Longest journey in my life!</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button button_arrow">See More</button>
-                </div>
-                <footer class="page-footer">
-                    <p class="redhat">All Rights Reserved © Travel Portal</p>
-                </footer>
+                <a href="#" class="button button-arrow">
+                    <span class="ico ico_arrow"></span>
+                    <span class="button-arrow__text">Find More</span>
+                </a>
             </div>
         </section>
     </main>
+    <h2 class="stories__title">TRAVEL STORIES</h2>
+    <div class="background-stories-footer">
+        <section class="page-stories">
+            <div class="stories-bg-color">
+                <div class="stories-wrapper">
+                    <div class="stories block-story">
+                        <img class="story__image" src="img/stories/stories-1.jpg" alt="strategy">
+                        <div class="story__content">
+                            <h3 class="story__name">10 Photos of Attractive Thailand</h3>
+                            <div class="story__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories block-story">
+                        <img class="story__image" src="img/stories/stories-2.jpg" alt="strategy">
+                        <div class="story__content">
+                            <h3 class="story__name">Canyonlands National Park, Utah</h3>
+                            <div class="story__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories block-story">
+                        <img class="story__image" src="img/stories/stories-3.jpg" alt="strategy">
+                        <div class="story__content">
+                            <h3 class="story__name">I left my heart in the Mountains!</h3>
+                            <div class="story__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stories block-story">
+                        <img class="story__image" src="img/stories/stories-4.jpg" alt="strategy">
+                        <div class="story__content">
+                            <h3 class="story__name">The Longest journey in my life!</h3>
+                            <div class="story__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories__button">
+                    <a href="#" class="button button-arrow">
+                        <span class="ico ico_arrow"></span>
+                        <span class="button-arrow__text">See More</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <span class="footer__copyright">All Rights Reserved © Travel Portal</span>
+                <ul class="social-icons">
+                    <li class="social__link">
+                        <a href="https://github.com/Diskantis" target="_blank">
+                            <img src="img/icons/ico-instagram.svg" alt="instagram.svg">
+                        </a>
+                    </li>
+                    <li class="social__link">
+                        <a href="https://github.com/Diskantis/RSSCHOOL-TRAVEL_SCSS" target="_blank">
+                            <img src="img/icons/ico-youtube.svg" alt="youtube.svg">
+                        </a>
+                    </li>
+                    <li class="social__link">
+                        <a href="https://rs.school/js-stage0/" target="_blank">
+                            <img src="img/icons/ico-twitter.svg" alt="twitter.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

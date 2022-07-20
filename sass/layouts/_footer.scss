@@ -1,0 +1,29 @@
+.page-footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 14px 0 ;
+}
+.footer__copyright {
+  color: $color-light;
+  @include font ($size: 1.6rem, $height: 2.1rem);
+}
+
+.footer-content {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 309px;
+}
+
+.social__link {
+  width: 34px;
+  height: 34px;
+  margin-left: 20px;
+  cursor: pointer;
+}

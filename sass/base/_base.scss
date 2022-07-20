@@ -25,6 +25,8 @@ h2 {
 }
 
 h3 {
+  color: $color-button;
   @extend %font-secondary;
   @include font($size: 3.5rem, $height: 4.2rem, $weight: 400);
+  margin-bottom: 24px;
 }

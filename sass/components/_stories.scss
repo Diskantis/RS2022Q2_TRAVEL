@@ -1,5 +1,64 @@
+.background-stories-footer {
+  background-image: url("../../img/backgraounds/stories-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //padding: 0 0 60px;
+}
+
 .stories__title {
   text-align: center;
   color: $color-heading;
   margin: 0 0 40px;
+}
+
+.page-stories {
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.stories-bg-color {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 100%;
+  height: 1270px;
+  padding-top: 40px;
+}
+
+.stories-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.block-story {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.block-story:last-child {
+  margin-bottom: 9px;
+}
+
+.story__image {
+  display: inline-block;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px #0D606F;
+  margin-right: 40px;
+}
+.story__content {
+  text-align: left;
+}
+
+.story__text {
+  color: $color-button;
+  @extend %font-secondary;
+  @include font($size: 2.0rem, $height: 2.4rem, $weight: 400);
+}
+
+.story__text a {
+  color: $color-button;
+  @include font($size: 2.0rem, $height: 2.4rem, $weight: 700);
+}
+
+.stories__button {
+  display: inline-block;
 }

@@ -42,14 +42,10 @@
   }
 }
 
-.preview__form {
-  button {
-    @include font ($size: 2.4rem, $height: 3.2rem);
+.preview__form button {
+    //@include font ($size: 2.4rem, $height: 3.2rem);
     position: absolute;
-    margin: 0;
-    padding: 13px 32px;
     top: 18px;
     right: 18px;
     bottom: 18px;
-  }
 }

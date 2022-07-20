@@ -1,4 +1,5 @@
 .button {
+  display: flex;
   @extend %font-primary;
   @include font ($size: 1.6rem, $height: 2.1rem);
   padding: 9px 30px;
@@ -9,7 +10,9 @@
   background-color: $color-button;
   border: 1px solid $color-button;
   color: $color-light;
-  &_arrow {
+  &_planning {
+    @include font ($size: 2.4rem, $height: 3.2rem);
+    padding: 13px 32px;
     box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
     }
     &:hover {
@@ -17,4 +20,14 @@
       border-color: $color-button;
       color: $color-button;
   }
+}
+
+.button-arrow {
+  width: 228px;
+  height: 59px;
+  @include font ($size: 2.4rem, $height: 3.2rem);
+  box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+  display: inline-flex;
+  align-items: center;
+  text-decoration-line: none;
 }

@@ -1,5 +1,6 @@
 .ico {
-  display: block;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .icon-square {
@@ -28,4 +29,11 @@
   background-image: url("../../img/icons/icon-avia.svg");
   width: 60px;
   height: 45px;
+}
+
+.ico_arrow {
+  background-image: url("../../img/icons/arrow-right.svg");
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }

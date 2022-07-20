@@ -1,33 +1,23 @@
 .page-destinations {
   text-align: center;
-  padding-bottom: 88px;
+  padding-bottom: 80px;
 }
 
 .destinations__title {
   text-align: center;
   color: $color-heading;
-  margin: 0 0 46px;
+  margin-bottom: 46px;
 }
 
 .destinations__button {
-  padding: 9px 31px;
+  display: inline-block;
 }
-
-//.destinations__button {
-//  @include font ($size: 2.4rem, $height: 3.2rem);
-//  position: absolute;
-//  margin: 0;
-//  padding: 13px 32px;
-//  top: 18px;
-//  right: 18px;
-//  bottom: 18px;
-//}
 
 .destinations-slider {
   width: 1440px;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .destinations-slider input {
@@ -53,6 +43,7 @@
 }
 
 .dest__slide {
+  position: relative;
   display: block;
   width: 800px;
   float: left;
@@ -63,8 +54,9 @@
 .info {
   position: absolute;
   display: block;
-  margin: 718px 0 0 15px;
-  color: #fff;
+  bottom: 40px;
+  left: 15px;
+  color: $color-light;
   @extend %font-primary;
   @include font ($size: 3.2rem, $height: 4.2rem);
 }
