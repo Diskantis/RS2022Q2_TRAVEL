@@ -413,7 +413,7 @@ section, main, footer, header, article {
   font-family: Aleo, Verdana, sans-serif;
 }
 
-.navigation__link a:hover, .button, .logo-path {
+.social_icon, .navigation__link a:hover, .button, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -683,10 +683,19 @@ h3 {
 }
 
 .social__link {
+  display: flex;
   width: 34px;
   height: 34px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.social_icon {
+  height: 34px;
+  width: 34px;
+}
+.social_icon:hover {
+  filter: invert(70%);
 }
 
 .page-preview {

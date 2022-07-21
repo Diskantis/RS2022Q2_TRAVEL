@@ -22,8 +22,18 @@
 }
 
 .social__link {
+  display: flex;
   width: 34px;
   height: 34px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.social_icon {
+  height: 34px;
+  width: 34px;
+  @extend %transition;
+  &:hover {
+    filter: invert(70%);
+  }
 }
