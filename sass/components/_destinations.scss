@@ -119,7 +119,7 @@ label {
 #switch-2:checked ~ .controls-btn .ctrl__btn:nth-child(1),
 #switch-3:checked ~ .controls-btn .ctrl__btn:nth-child(2),
 #switch-4:checked ~ .controls-btn .ctrl__btn:nth-child(3) {
-  background: url("../../img/icons/prev-arrow.png") no-repeat;
+  background: url("img/icons/prev-arrow.png") no-repeat;
   float: left;
   margin: 0;
   display: block;
@@ -129,7 +129,7 @@ label {
 #switch-2:checked ~ .controls-btn .ctrl__btn:nth-child(3),
 #switch-3:checked ~ .controls-btn .ctrl__btn:nth-child(4),
 #switch-4:checked ~ .controls-btn .ctrl__btn:nth-child(1) {
-  background: url("../../img/icons/next-arrow.png") no-repeat;
+  background: url("img/icons/next-arrow.png") no-repeat;
   float: right;
   margin: 0;
   display: block;

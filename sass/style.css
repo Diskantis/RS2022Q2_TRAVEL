@@ -563,25 +563,25 @@ h3 {
 }
 
 .ico_bicycle {
-  background-image: url("../../img/icons/icon-bicycle.svg");
+  background-image: url("img/icons/icon-bicycle.svg");
   width: 50px;
   height: 45px;
 }
 
 .ico_calendar {
-  background-image: url("../../img/icons/icon-calendar.svg");
+  background-image: url("img/icons/icon-calendar.svg");
   width: 52px;
   height: 52px;
 }
 
 .ico_avia {
-  background-image: url("../../img/icons/icon-avia.svg");
+  background-image: url("img/icons/icon-avia.svg");
   width: 60px;
   height: 45px;
 }
 
 .ico_arrow {
-  background-image: url("../../img/icons/arrow-right.svg");
+  background-image: url("img/icons/arrow-right.svg");
   width: 40px;
   height: 40px;
   margin-right: 10px;
@@ -631,7 +631,7 @@ h3 {
 }
 
 .background-header-preview {
-  background-image: url("../../img/backgraounds/preview-bg.jpg");
+  background-image: url("img/backgraounds/preview-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 0 33px;
@@ -927,7 +927,7 @@ label {
 #switch-2:checked ~ .controls-btn .ctrl__btn:nth-child(1),
 #switch-3:checked ~ .controls-btn .ctrl__btn:nth-child(2),
 #switch-4:checked ~ .controls-btn .ctrl__btn:nth-child(3) {
-  background: url("../../img/icons/prev-arrow.png") no-repeat;
+  background: url("img/icons/prev-arrow.png") no-repeat;
   float: left;
   margin: 0;
   display: block;
@@ -937,7 +937,7 @@ label {
 #switch-2:checked ~ .controls-btn .ctrl__btn:nth-child(3),
 #switch-3:checked ~ .controls-btn .ctrl__btn:nth-child(4),
 #switch-4:checked ~ .controls-btn .ctrl__btn:nth-child(1) {
-  background: url("../../img/icons/next-arrow.png") no-repeat;
+  background: url("img/icons/next-arrow.png") no-repeat;
   float: right;
   margin: 0;
   display: block;
@@ -951,7 +951,7 @@ label {
 }
 
 .background-stories-footer {
-  background-image: url("../../img/backgraounds/stories-bg.jpg");
+  background-image: url("img/backgraounds/stories-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
